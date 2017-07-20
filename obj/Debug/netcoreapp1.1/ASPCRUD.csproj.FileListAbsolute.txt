@@ -1,0 +1,8 @@
+C:\Users\Kozlowski\Desktop\code\ASPCRUD\bin\Debug\netcoreapp1.1\ASPCRUD.deps.json
+C:\Users\Kozlowski\Desktop\code\ASPCRUD\bin\Debug\netcoreapp1.1\ASPCRUD.runtimeconfig.json
+C:\Users\Kozlowski\Desktop\code\ASPCRUD\bin\Debug\netcoreapp1.1\ASPCRUD.runtimeconfig.dev.json
+C:\Users\Kozlowski\Desktop\code\ASPCRUD\bin\Debug\netcoreapp1.1\ASPCRUD.dll
+C:\Users\Kozlowski\Desktop\code\ASPCRUD\bin\Debug\netcoreapp1.1\ASPCRUD.pdb
+C:\Users\Kozlowski\Desktop\code\ASPCRUD\obj\Debug\netcoreapp1.1\ASPCRUD.AssemblyInfo.cs
+C:\Users\Kozlowski\Desktop\code\ASPCRUD\obj\Debug\netcoreapp1.1\ASPCRUD.dll
+C:\Users\Kozlowski\Desktop\code\ASPCRUD\obj\Debug\netcoreapp1.1\ASPCRUD.pdb

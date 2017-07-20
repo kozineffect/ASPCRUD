@@ -1,0 +1,45 @@
+@model ASPCRUD.Models.Code
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div class = "jumbotron">
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Snippet)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Snippet)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Language)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Language)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">
+        <button class = "btn btn-success">Edit</button>
+    </a>
+    <a asp-action="Index">
+        <button class = "btn btn-primary">Back to List</button>
+    </a>
+</div>

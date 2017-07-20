@@ -1,0 +1,64 @@
+@model IEnumerable<ASPCRUD.Models.Code>
+
+@{
+    ViewData["Title"] = "Code Snippets";
+}
+
+<div class = "page-header">
+<h2>Code Snippet Home</h2>
+</div>
+
+<div class = "jumbotron">
+    <a asp-action="Create"><button type="button" class="btn btn-primary">Create New Snippet</button></a>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Snippet)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Language)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Snippet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Language)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">
+                    <button type="button" class="btn btn-success">Edit</button>
+                    </a>
+
+                <a asp-action="Details" asp-route-id="@item.ID">
+                    <button type="button" class="btn btn-info">Details</button>
+                    </a>
+
+                <a asp-action="Delete" asp-route-id="@item.ID">
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    </a>
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
